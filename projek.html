@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ungkapan Cinta Untukmu ❤️</title>
+</head>
+<body>
+    <div class="main-container">
+    <div class="card" id="mainCard">
+
+      <div class="step active" id="step0">
+        <h1 class="title">Ada Pesan Rahasia Untukmu 💌</h1>
+        <p style="color: #666; font-size: 0.95rem; margin-top: 5px;">
+          Seseorang mengirimkan surat cinta khusus buat kamu. Tekan amplop di bawah untuk membukanya!
+        </p>
+
+        <div class="envelope-wrapper" onclick="openEnvelope()">
+          <div class="envelope-icon">✉️</div>
+        </div>
+
+        <div>
+          <button class="btn btn-primary" onclick="openEnvelope()">
+            Buka Surat Cinta 💌
+          </button>
+        </div>
+      </div>
+
+      <div class="step" id="step1">
+        <h1 class="title">Untuk Kamu yang Spesial 💖</h1>
+        
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="letter-box" id="letterBox"></div>
+
+        <button class="btn btn-primary" id="btnNext" disabled onclick="goToStep(2)">
+          Lanjut Ke Keputusan ✨
+        </button>
+    </div>
+  </div>
+</body>
+</html>
