@@ -102,3 +102,296 @@ h1.title {
   margin-bottom: 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+
+.letter-box {
+  background: rgba(255, 240, 245, 0.92);
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px dashed #ff758c;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.7;
+  min-height: 220px;
+  max-height: 320px;
+  overflow-y: auto;
+  margin-bottom: 18px;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.03);
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #ffd1dc;
+  border-radius: 10px;
+  height: 8px;
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ff758c, #ff2a75);
+  transition: width 0.2s ease;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 13px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: scale(1.06);
+  box-shadow: 0 12px 25px rgba(255, 65, 108, 0.4);
+}
+
+.btn:disabled {
+  background: #ccc !important;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.6;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+  position: relative;
+  min-height: 120px;
+}
+
+#btnTerima {
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+  color: white;
+  font-size: 1.15rem;
+  padding: 15px 36px;
+  z-index: 5;
+}
+
+#btnTolak {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  z-index: 6;
+  white-space: nowrap;
+}
+
+#btnTolak.warning-mode {
+  background: #d32f2f !important;
+  animation: pulseWarning 0.3s infinite alternate;
+  box-shadow: 0 0 18px rgba(211, 47, 47, 0.8);
+}
+
+@keyframes pulseWarning {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+.breathe-animation {
+  animation: breatheEffect 0.8s infinite alternate ease-in-out !important;
+}
+
+@keyframes breatheEffect {
+  0% { transform: scale(1.05); }
+  100% { transform: scale(1.35); box-shadow: 0 0 30px rgba(56, 239, 125, 0.8); }
+}
+
+.timer-badge {
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #ff2a75;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#jumpscareOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 9999;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#jumpscareOverlay.active {
+  display: flex;
+  animation: shake 0.1s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(3px, 3px) rotate(0deg); }
+  20% { transform: translate(-3px, -3px) rotate(-1deg); }
+  40% { transform: translate(-3px, 3px) rotate(1deg); }
+  60% { transform: translate(3px, -3px) rotate(0deg); }
+  80% { transform: translate(3px, 3px) rotate(1deg); }
+  100% { transform: translate(-3px, -3px) rotate(-1deg); }
+}
+
+.jumpscare-ghost {
+  font-size: 110px;
+  animation: zoomGhost 0.3s ease infinite alternate;
+}
+
+@keyframes zoomGhost {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.4); }
+}
+
+.love-meter-container {
+  margin: 20px 0;
+}
+
+.love-meter-bar {
+  height: 22px;
+  background: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.love-meter-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ff758c, #ff2a75);
+  transition: width 0.05s linear;
+  border-radius: 20px;
+}
+
+.love-meter-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.wa-box {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* BENTUK BALON OVAL ALAMI 3D */
+#balloonContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.balloon {
+  position: absolute;
+  pointer-events: auto;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  animation: floatUp 22s linear forwards;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(105vh) rotate(0deg); }
+  100% { transform: translateY(-140vh) rotate(15deg); }
+}
+
+.balloon-body {
+  width: 160px;
+  height: 200px;
+  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 25px 15px 15px 15px;
+  box-shadow: inset -12px -12px 25px rgba(0, 0, 0, 0.2), inset 10px 10px 20px rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  line-height: 1.35;
+}
+
+.balloon-knot {
+  width: 12px;
+  height: 10px;
+  background: inherit;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  margin-top: -2px;
+}
+
+.balloon-string {
+  width: 2px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.balloon.paused {
+  animation-play-state: paused !important;
+  transform: scale(1.35) !important;
+  z-index: 1000 !important;
+}
+
+.balloon.paused .balloon-body {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.9), inset -12px -12px 25px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+footer {
+  margin-top: 50px;
+  padding: 15px 0;
+  color: #555;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
+
+#confettiCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 90;
+}
