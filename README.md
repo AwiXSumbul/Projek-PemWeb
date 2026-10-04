@@ -3,7 +3,7 @@
 **Ungkapan Cinta Interaktif ❤️**
 
 ## Deskripsi Projek
-Website ini dibuat khusus sebagai wadah kreatif untuk menyatakan perasaan cinta seseorang secara digital. Berfokus pada interaksi pengguna, web ini membawa pengunjungnya melewati perjalanan emosional, mulai dari membuka amplop rahasia, membaca surat romantis, hingga memilih jawaban akhir[cite: 9]. 
+Website ini dibuat khusus sebagai wadah kreatif untuk menyatakan perasaan cinta seseorang secara digital. Berfokus pada interaksi pengguna, web ini membawa pengunjungnya melewati perjalanan emosional, mulai dari membuka amplop rahasia, membaca surat romantis, hingga memilih jawaban akhir. 
 
 ## Fitur Utama:
 - **Animasi Latar:** Menggunakan Canvas API untuk menampilkan efek hati dan potongan kertas warna-warni (*confetti*) yang berjatuhan.
