@@ -19,7 +19,7 @@
     <p style="color: white; font-size: 1.1rem; margin-top: 10px;">Gak boleh tekan Tolak pokoknya!</p>
   </div>
 
-    <div class="main-container">
+  <div class="main-container">
     <div class="card" id="mainCard">
 
       <div class="step active" id="step0">
@@ -51,6 +51,54 @@
         <button class="btn btn-primary" id="btnNext" disabled onclick="goToStep(2)">
           Lanjut Ke Keputusan ✨
         </button>
+      </div>
+
+      <div class="step" id="step2">
+        <h1 class="title">Maukah Kamu Jadi Pasanganku? 💍</h1>
+        <div class="timer-badge" id="timerBadge">Waktu Tolak: 30s</div>
+        
+        <p style="color: #666; font-size: 0.95rem; margin-top: 10px;">
+          Jawab jujur dari lubuk hatimu yang paling dalam ya! 🥰
+        </p>
+
+        <div class="btn-group" id="btnGroup">
+          <button class="btn" id="btnTerima" onclick="terimaCinta()">TERIMA 💖</button>
+          <button class="btn" id="btnTolak" onclick="tolakCinta()">Tolak 😜</button>
+        </div>
+      </div>
+       
+      <div class="step" id="step3">
+        <h1 class="title">YAYY! KITA RESMI JADIAN! 🎉💖</h1>
+        <p style="color: #444; font-size: 0.95rem; margin-top: 5px;">
+          Terima kasih sudah menerima cintaku! Aku janji bakal buat kamu bahagia terus! 🥳✨
+        </p>
+
+        <div class="love-meter-container">
+          <div style="font-size: 0.85rem; color: #555; margin-bottom: 5px; font-weight: 600;">
+            Persentase Cinta Kita:
+          </div>
+          <div class="love-meter-bar">
+            <div class="love-meter-fill" id="loveFill"></div>
+            <div class="love-meter-text" id="loveText">0%</div>
+          </div>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.7); padding: 12px; border-radius: 15px; margin-bottom: 15px;">
+          <p style="font-size: 0.85rem; color: #ff2a75; font-weight: 600;">
+            🎈 Tip: Klik balon-balon yang terbang untuk berhenti & membaca gombalannya!
+          </p>
+        </div>
+
+        <div class="wa-box">
+          <a href="https://wa.me/6283143254455?text=Hai!%20Aku%20udah%20terima%20cinta%20kamu%20lewat%20web%20ini!%20Aku%20juga%20sayang%20banget%20sama%20kamu!%20%E2%9D%A4%EF%B8%8F%F0%9F%A5%B0" 
+             target="_blank" 
+             class="btn btn-primary" 
+             style="background: #25D366; text-decoration: none;">
+            Kabarin Aku via WhatsApp (+62 831-4325-4455) 📲
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 

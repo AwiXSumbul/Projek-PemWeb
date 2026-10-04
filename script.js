@@ -26,6 +26,7 @@ const gombalTemplates = [
   "Tolong jangan sering tersenum ya, kasihan manisnya gula kalah saing! 🍯😆",
   "Kamu punya pensil warna gak? Soalnya kamu mewarnai hariku! 🎨💕"
 ];
+
 const balloonGombalan = [];
 for (let i = 1; i <= 150; i++) {
   const base = gombalTemplates[(i - 1) % gombalTemplates.length];

@@ -20,7 +20,6 @@ body {
   position: relative;
 }
 
-
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -102,7 +101,6 @@ h1.title {
   margin-bottom: 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 .letter-box {
   background: rgba(255, 240, 245, 0.92);
@@ -305,7 +303,6 @@ h1.title {
   gap: 10px;
 }
 
-/* BENTUK BALON OVAL ALAMI 3D */
 #balloonContainer {
   position: fixed;
   top: 0;
